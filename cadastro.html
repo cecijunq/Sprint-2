@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Cadastro de Usuário</title>
+        <link rel="stylesheet" href="styles.css">
+    </head>
+
+    <body>
+
+        <header>
+
+            <img src="./img/image-removebg-preview3.png" alt="LOGO">
+
+            <nav>
+                <ul class="navBar">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Quem somos?</a></li>
+                    <li><a href="#">Contatos</a></li>
+                    <li><a href="#">Ajuda</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <h1>Cadastre-se</h1>
+        
+        <form class="signup_area" onsubmit="cadastro()">
+
+    
+            <div class="div_input">
+                <label class="label_input">Nome (esse será seu Usuário):</label>
+                <input type="text" class="input" id="name_input">
+            </div>
+    
+            <div class="div_input">
+                <label class="label_input">Sobrenome:</label>
+                <input type="text" class="input" id="sirname_input">
+            </div>
+    
+            <div class="div_input">
+                <label class="label_input">E-mail:</label>
+                <input type="email" class="input" id="email_input">
+            </div>
+    
+            <div class="div_input">
+                <label class="label_input">Digite uma Senha:</label>
+                <input type="password" class="input" id="password_input_confi">
+            </div>
+    
+            <div class="div_input">
+                <label class="label_input">Confirme a Senha:</label>
+                <input type="password" class="input" id="password_input">
+            </div>
+    
+            <label class="label_input">Selecione em qual grupo você se encaixa</label>
+            <div class="type">
+                <div class="typeWebsite">
+                    <input type="radio" id="estudanteRadio">
+                    <p>Sou um estudante</p>
+                </div>
+                
+                <div class="typeWebsite">
+                    <input type="radio" id="empresaRadio">
+                    <p>Sou uma empresa</p>
+                </div>
+            </div>
+    
+            <button id="btn_signup" class="btn" type="submit">Cadastrar</button>
+    
+            <p><a href="index.html">Página de Login</a></p>
+        </form>
+        
+
+        <script src="index.js"></script>
+    </body>
+</html>

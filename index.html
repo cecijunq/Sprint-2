@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Login e Registro do Usuário</title>
+
+        <link rel="stylesheet" href="styles.css" type="text/css">
+    </head>
+
+    <body>
+
+        <header>
+
+            <img src="./img/image-removebg-preview3.png" alt="LOGO">
+
+            <nav>
+                <ul class="navBar">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Quem somos?</a></li>
+                    <li><a href="#">Contatos</a></li>
+                    <li><a href="#">Ajuda</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        
+        <section class="login_area">
+            
+            <h1>Login</h1>
+
+            <form id="login" onsubmit="login()">
+                <div class="div_input">
+                    <label class="label_input">Usuário</label>
+                    <input type="text" class="input" id="input_user">
+                </div>
+                  
+                <div class="div_input">
+                    <label class="label_input">Senha</label>
+                    <input type="password" class="input" id="input_password">
+                </div>
+            
+                <div class="bottom">
+                    <button class="btn" id="btn_login" onclick="controle()">Entrar</button>
+                    <p>Ainda não tem uma conta? <a href="cadastro.html">Cadastre-se aqui</a></p>
+                </div>
+
+                <!-- <p><a href="controle.html">prox pag</a></p> -->
+    
+            </form>
+
+        </section>
+        
+        <script src="index.js"></script>
+    </body>
+</html>
